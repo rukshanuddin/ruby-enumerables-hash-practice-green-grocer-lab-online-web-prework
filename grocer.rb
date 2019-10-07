@@ -1,5 +1,5 @@
 def consolidate_cart(cart)
-  cart.to_h
+  cart = Hash[cart]
 
 end
 
