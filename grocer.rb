@@ -1,6 +1,8 @@
 def consolidate_cart(cart)
-final_hash = Hash[cart]
-
+  cart.each do |key, value|
+  supplies << value
+end
+supplies
 end
 
 def apply_coupons(cart, coupons)
