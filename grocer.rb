@@ -1,6 +1,6 @@
 def consolidate_cart(cart)
-  cart = Hash[cart]
 
+final_hash = Hash[*cart.collect{|h| h.to_a}.flatten]
 end
 
 def apply_coupons(cart, coupons)
