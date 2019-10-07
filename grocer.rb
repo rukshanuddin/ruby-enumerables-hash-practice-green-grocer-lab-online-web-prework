@@ -1,8 +1,8 @@
 def consolidate_cart(cart)
   cart.each do |key, value|
-  supplies << value
+  cart << value
 end
-supplies
+cart
 end
 
 def apply_coupons(cart, coupons)
