@@ -1,6 +1,6 @@
 def consolidate_cart(cart)
-final_hash = Hash[*cart.collect{|h| h.to_a}.flatten]
-final_hash[0] << (:count => 1)
+final_hash = Hash[cart]
+
 end
 
 def apply_coupons(cart, coupons)
