@@ -1,5 +1,6 @@
 def consolidate_cart(cart)
-  # code here
+  cart = Hash[cart]
+
 end
 
 def apply_coupons(cart, coupons)
@@ -11,5 +12,7 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
-  # code here
+  # consolidate_cart(cart)
+  #apply_coupons(cart, coupons)
+  #apply_clearance(cart)
 end
